@@ -160,16 +160,24 @@ label h2 {
     margin-left: 20px;
 }
 .botaoCalcula{
-    margin-top: 0.6vh;
+    /**margin-top: 0.6vh;
     margin-bottom: 0.3vh;
-    margin-left: 145px;
-    margin-right: auto;
+    margin-left: 145px;*/
+    margin: 0.6vh 0 0.3vh 50%;
+    transform: translateX(-70px);
     width: 120px;
 }
 .botaoCalcula:hover{
      width: 140px;
      margin-bottom: 0.2vh;
 }
+
+/**=============== ExibirNotas ======================*/
+
+/** .confereNotasUsuario {
+    width: 100px;
+    color: black;
+} */
 
 /**=============== Footer ======================*/
 footer{

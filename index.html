@@ -3,69 +3,158 @@
 <html lang="pt-BR, en">
 <head>
 	<meta charset="UTF-8">
-	<title>CodePen - Calculadora de média</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Pode ser um texto de até 156 caracteres, descrevevendo a página...">
-	<meta name="keywords" content="html, css">
-	<meta name="author" content="BrunoRo7">
-	<meta name="robots" content="noindex, nofollow">
-	<link rel="stylesheet" href="./style.css">
+	<title>
+		Calculadora De Média!
+	</title>
+	<meta 
+		name="viewport" 
+		content="width=device-width, initial-scale=1">
+	<meta 
+		name="description" 
+		content="Calculadora de Média, use para calcular a média de quantas notas quiser..">
+	<meta 
+		name="keywords" 
+		content="html, css">
+	<meta 
+		name="author" 
+		content="BrunoRo7">
+	<meta 
+		name="robots" 
+		content="noindex, nofollow">
+	<link 
+		rel="stylesheet" 
+		href="./style.css">
 </head>
   
 	<html>
 		<body>
 			<header>
 				<div class="cabecalho">
-					<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="imersaoDev" alt="">
-				  	<a href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="aluraLogo"></a>
-					<img src="./assets/Aula 1 - Média.png" class="aPositivoIcon" alt="">
+					<img 
+						src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" 
+						class="imersaoDev" 
+						alt="">
+				  	<a 
+						href="https://alura.com.br/" 
+						target="_blank">
+							<img 
+								src="https://www.alura.com.br/assets/img/home/alura-logo.svg" 
+								alt="" 
+								class="aluraLogo">
+					</a>
+					<img 
+						src="./assets/Aula 1 - Média.png" 
+						class="aPositivoIcon" 
+						alt="">
         		</div>
 			</header>
 		
 			<main>
 				<div class="boxInformacao">
 					<h1 class="titulo">
-						Calculadora De Média</h1>
+						Calculadora De Média
+					</h1>
 					<h3 class="subTitulo">
-						Descubra qual a média de todas as suas notas!</h3>
+						Descubra qual a média de todas as suas notas!
+					</h3>
 				</div>
 
-        	<div class="boxCalculadora">
+        		<div class="boxCalculadora">
 					<ul class="regras">
-						<h3>- Orientações:</h3>
-						<li>1- Coloque a primeira nota dentro do espaço indicado e clique no botão abaixo, Inserir Nota!</li>
-						<li>2- Repita a etapa 1, para cada nota! Pode ser qualquer quantidade de notas!</li>
-						<li>Após inserir a última de todas as notas, basta clicar no botão, Calcular Média!</li>
-						<p>Obs: Caso erre alguma nota ou queira recomeçar, basta atulizar a página;</p>
+						<h3>
+							- Orientações:
+						</h3>
+						<li>
+							1- Coloque a primeira nota dentro do espaço indicado e clique no botão abaixo, Inserir Nota!
+						</li>
+						<li>
+							2- Repita a etapa 1, para cada nota! Pode ser qualquer quantidade de notas!
+						</li>
+						<li>
+							Após inserir a última de todas as notas, basta clicar no botão, Calcular Média!
+						</li>
+						<p>
+							Obs: Caso erre alguma nota ou queira recomeçar, basta atulizar a página;
+						</p>
 					</ul>
-				<div>
-					<label for="moeda"><h2>
-						  Digite Apenas Uma Nota Por Vez!</h2></label>
-					<input type="number" id="recebeNota"  onfocus="this.value='';"/>
 					
-					<button type="submit" class="botaoInseri botoes" onclick="ponteDeEntrada()">
-						Inserir Nota</button>
+					<div>
+						<label for="moeda">
+							<h2>
+								Digite Apenas Uma Nota Por Vez!
+							</h2>
+						</label>
+						<input 
+							type="number" 
+							id="recebeNota"  
+							onfocus="this.value='';"/>
+					
+						<button 
+							type="submit" 
+							class="botaoInseri botoes" 
+							onclick="ponteDeEntrada()">
+								Inserir Nota
+						</button>
+					</div>
+
+				<div class="confereNotasUsuario">
 				</div>
+				
 				<div>
-          			<label for="moeda"><h2>
-						Antes de clicar digite cada uma das notas!</h2></label>
-					<button type="submit" id="realizaMedia" class="botaoCalcula botoes" onclick="valorDeSaida()">
-						Calcular Média</button>
-					<div type="number" id="exibeNaTela"></div>
-          		</div>
-			</div>
+          			<label for="moeda">
+						<h2>
+							Antes de clicar, digite cada uma das notas!
+						</h2>
+					</label>
+					<button 
+						type="submit" 
+						id="realizaMedia" 
+						class="botaoCalcula botoes" 
+						onclick="valorDeSaida()">
+						Calcular Média
+					</button>
+					<div type="number" id="exibeNaTela">
+					</div>
+				</div>
+				</div>
     		</main>
       
-		<footer>
-			<div class="contatos">
-				<a href="https://github.com/brunoro7" target="_blank"><img src=".\assets\github.svg" alt="" class="gitHubIcon"></a>
-				<a href="https://discord.gg/Q2W8sxaugq" target="_blank"><img src="./assets/Logo-HubTech-05.png" alt="" class="hubTechIcon"></a>
-				<a href="https://www.linkedin.com/in/brunoro7/" target="_blank"><img src=".\assets\iconmonstr-linkedin-2.svg" alt="" class="linkedInIcon"></a>
-				<p>bruno.ro7c@gmail.com</p>
-			</div>
-		</footer>
+			<footer>
+				<div class="contatos">
+					<a 
+						href="https://github.com/brunoro7" 
+						target="_blank">
+							<img 
+								src=".\assets\github.svg" 
+								alt="" 
+								class="gitHubIcon">
+					</a>
+					<a 
+						href="https://discord.gg/Q2W8sxaugq" 
+						target="_blank">
+							<img 
+								src="./assets/Logo-HubTech-05.png" 
+								alt="" 
+								class="hubTechIcon">
+					</a>
+					<a 
+						href="https://www.linkedin.com/in/brunoro7/" 
+						target="_blank">
+							<img 
+								src=".\assets\iconmonstr-linkedin-2.svg" 
+								alt="" 
+								class="linkedInIcon">
+					</a>
+					<p>bruno.ro7c@gmail.com</p>
+				</div>
+			</footer>
 		
-		<script  src="./script.js"></script>
+			<script  src="./script.js">
+				/** -aqui estão todos as funções de calculo,
+					-verificações
+					-e prints para a tela
+				*/
+			</script>
 
     	</body>
 	</html>
